@@ -1,0 +1,19 @@
+namespace melodika.Models;
+using Newtonsoft.Json;
+
+public class Curso
+{
+    public Curso() { }
+
+    [JsonProperty("IdCurso")]
+    public int IdCurso { get; set; }
+
+    [JsonProperty("TituloCurso")]
+    public string TituloCurso { get; set; }
+
+    [JsonProperty("Descripcion")]
+    public string Descripcion { get; set; }
+
+    [JsonProperty("IdInstrumento")]
+    public int IdInstrumento { get; set; }
+}
