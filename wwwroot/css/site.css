@@ -47,10 +47,10 @@ body {
 
 footer {
  
-  background-image: url('../imagenes/footer.png') !important;
-  background-size: cover !important;
-  background-repeat: no-repeat !important;
-  background-position: center !important;
+  background-image: url('../imagenes/footer.png');
+  background-size: cover ;
+  background-repeat: no-repeat ;
+  background-position: center ;
   
 
 }
