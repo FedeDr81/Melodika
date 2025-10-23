@@ -1,0 +1,42 @@
+@{
+    ViewData["Title"] = "login";
+}
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Inicio de sesión — melodika</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+  <main class="pagina">
+    <section class="login">
+      <h1 class="titulo">Inicio de sesion en melodika</h1>
+
+      <form class="formulario" action="#" method="post" autocomplete="on" novalidate>
+        <label class="campo">
+          <input class="entrada" type="text" name="usuario" placeholder="Correo electronico o telefono" required>
+        </label>
+
+        <label class="campo">
+          <input class="entrada" type="password" name="contrasena" placeholder="Contraseña" required>
+        </label>
+
+        <button class="boton-primario" type="submit">Iniciar sesion</button>
+
+        <p class="texto-secundario">
+          ¿No creaste tu cuenta todavia? <br>
+          <a class="enlace" href="#">Crea tu cuenta</a>
+        </p>
+
+        <button class="boton-red" type="button">Inicia sesión con Google</button>
+        <button class="boton-red" type="button">Iniciar sesión con Facebook</button>
+        <button class="boton-red" type="button">Iniciar sesión con Instagram</button>
+      </form>
+    </section>
+  </main>
+</body>
+<footer>
+
+</footer>
+</html>

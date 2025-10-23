@@ -10,7 +10,7 @@
       <div class="col-md-6">
         <h1 class="lead">Descubrí tus habilidades musicales</h1>
         <p class="display-5 fw-bold mb-3">Aprendé música de forma interactiva con Melódika</p>
-        <a href="#" class="btn btn-primary btn-lg mt-3">COMENZAR AHORA</a>
+        <a href="login" class="btn btn-primary btn-lg mt-3">COMENZAR AHORA</a>
       </div>
 
       <!-- Imagen a la derecha -->
@@ -56,58 +56,59 @@
     </div>
   </section>
 <section class="seccion3">
-    <div >
-      <img src="Imagenes/Aprender_Guitarra.png" alt="Aprende Guitarra">
-      <div class="overlay">
-        <a href="/AprenderGuitarra" class="btn btn-light btn-lg">APRENDE GUITARRA</a>
-      </div>
+  <div class="card-curso">
+    <img src="Imagenes/Aprender_Guitarra.png" alt="Aprende Guitarra" />
+    <div class="overlay">
+      <a href="/AprenderGuitarra">APRENDE GUITARRA</a>
     </div>
+  </div>
 
-    <div>
-      <img src="Imagenes/Aprender_Teoria.png" alt="Aprende Teoría Musical">
-      <div class="overlay">
-        <h1>APRENDE TEORIA MUSICAL</h1>
-      </div>
+  <div class="card-curso">
+    <img src="Imagenes/Aprender_Teoria.png" alt="Aprende Teoría Musical" />
+    <div class="overlay">
+      <span>APRENDE TEORIA MUSICAL</span>
     </div>
   </div>
 
   <div class="card-piano">
-    <img src="Imagenes/Aprender_Piano.png" alt="Aprende Piano">
+    <img src="Imagenes/Aprender_Piano.png" alt="Aprende Piano" />
     <div class="overlay">
-      <h1>APRENDE PIANO</h1>
+      <span>APRENDE PIANO</span>
     </div>
+  </div>
 </section>
 
-  <!-- Visual + CTA -->
-  <section class="container text-center my-5">
-    <!-- Imagen principal de personas tocando piano -->
-    <div class="image-placeholder">[Imagen de personas tocando piano]</div>
-    <a href="#" class="btn btn-primary btn-lg">APRENDE HOY</a>
-  </section>
 
-  <!-- Contacto -->
-  <section class="container">
-    <h2 class="section-title">CONTÁCTANOS</h2>
-    <!-- Imagen decorativa o de contacto -->
-    <div class="image-placeholder">[Imagen de contacto o equipo de soporte]</div>
-    <div class="contact-form">
-      <form>
-        <div class="mb-3">
-          <label for="nombre" class="form-label">Tu Nombre</label>
-          <input type="text" class="form-control" id="nombre" placeholder="Escribe tu nombre" />
-        </div>
-        <div class="mb-3">
-          <label for="mensaje" class="form-label">Tu Mensaje</label>
-          <textarea class="form-control" id="mensaje" rows="4" placeholder="Escribe tu mensaje"></textarea>
-        </div>
-        <button type="submit" class="btn btn-success">Enviar</button>
-      </form>
-      <div class="mt-4 text-center">
-        <p><strong>Teléfono:</strong> 1234-9794</p>
-        <p><strong>Email:</strong> Melodika@gmail.com</p>
-      </div>
+  <section id="contacto">
+  <div class="contacto-contenedor">
+
+    <!-- Columna izquierda: info -->
+    <div class="contacto-info">
+      <h2>CONTACTANOS</h2>
+      <p>Llena el formulario y<br>recibí más información</p>
+
+      <hr>
+
+      <p>1234-5678</p>
+      <p>
+        <a href="mailto:Melodika@gmail.com">Melodika@gmail.com</a>
+      </p>
     </div>
-  </section>
-  <footer>
-      <img src="imagenes/footer.png" alt="">
-  </footer>
+
+    <!-- Columna derecha: formulario -->
+    <form action="/Contacto/Enviar" method="post" class="contacto-form">
+      <label for="nombre" class="sr-only">Nombre</label>
+      <input id="nombre" name="Nombre" type="text" placeholder="Tu Nombre" required>
+
+      <label for="email" class="sr-only">Email</label>
+      <input id="email" name="Email" type="email" placeholder="Tu Email" required>
+
+      <label for="mensaje" class="sr-only">Mensaje</label>
+      <textarea id="mensaje" name="Mensaje" rows="4" placeholder="Tu Mensaje" required></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
+
+  </div>
+</section>
+
