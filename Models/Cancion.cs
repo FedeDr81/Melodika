@@ -22,4 +22,7 @@ public class Cancion
 
     [JsonProperty("IdGenero")]
     public int IdGenero { get; set; }
+
+    [JsonProperty("Valoracion")]
+    public int Valoracion { get; set; }
 }

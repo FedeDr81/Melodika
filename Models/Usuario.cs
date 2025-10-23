@@ -28,4 +28,11 @@ public class Usuario
 
     [JsonProperty("FechaRegistro")]
     public DateTime FechaRegistro { get; set; }
+
+    [JsonProperty("FotoPerfil")]
+    public string FotoPerfil { get; set; }
+
+    [JsonProperty("Genero")]
+    public string Genero { get; set; }
+
 }
