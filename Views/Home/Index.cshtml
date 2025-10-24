@@ -97,14 +97,20 @@
 
     <!-- Columna derecha: formulario -->
     <form action="/Contacto/Enviar" method="post" class="contacto-form">
-      <label for="nombre" class="sr-only">Nombre</label>
-      <input id="nombre" name="Nombre" type="text" placeholder="Tu Nombre" required>
+      <article>
+        <label for="nombre" class="sr-only">Nombre</label>
+        <input id="nombre" name="Nombre" type="text" placeholder="Tu Nombre" required>
+      </article>
 
+      <article>
       <label for="email" class="sr-only">Email</label>
       <input id="email" name="Email" type="email" placeholder="Tu Email" required>
-
-      <label for="mensaje" class="sr-only">Mensaje</label>
-      <textarea id="mensaje" name="Mensaje" rows="4" placeholder="Tu Mensaje" required></textarea>
+      </article>
+      
+      <article>
+        <label for="mensaje" class="sr-only">Mensaje</label>
+        <textarea id="mensaje" name="Mensaje" rows="4" placeholder="Tu Mensaje" required></textarea>
+      </article>
 
       <button type="submit">Enviar</button>
     </form>

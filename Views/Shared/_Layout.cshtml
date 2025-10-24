@@ -10,38 +10,21 @@
 </head>
 
 <body>
+
+  <header>
+    <nav>
+      <ul>
+        <li>
+          <a href='@Url.Action("todasLasPaginas", "Home")'> PAGINAS PRINCIPALES </a>
+          <a href='@Url.Action("Index", "Home")'> Landing </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
     <main role="main">
         @RenderBody()
     </main>
-
-    <footer class="footer">
-  <img src="/imagenes/Footer.png" alt="Fondo Footer" class="footer-img">
-
-  <div class="footer-contenido">
-    <div class="footer-arriba">
-      <div class="footer-izq">
-        <h2><span class="m">m</span>melodika</h2>
-        <p>La música está en vos,<br> nosotros te la desbloqueamos</p>
-      </div>
-
-      <div class="footer-der">
-        <a href="#">Política de privacidad</a> <!-- LINK -->
-        <a href="#">Términos y condiciones</a> <!-- LINK -->
-        <a href="#">Ayuda</a> <!-- LINK -->
-      </div>
-    </div>
-
-    <div class="footer-redes">
-      <a href="#">FB</a> <!-- LINK -->
-      <a href="#">IG</a> <!-- LINK -->
-      <a href="#">DC</a> <!-- LINK -->
-      <a href="#">SP</a> <!-- LINK -->
-    </div>
-
-    <p class="footer-copy">© 2025 Melodika. Todos los derechos reservados.</p>
-  </div>
-</footer>
-
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>

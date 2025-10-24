@@ -66,6 +66,105 @@ body {
   margin: auto;
 }
 
+/* ====== ESTILOS FOOTER ====== */
+.footer {
+  width: 100%;
+  background-image: url("footer.png");
+  background-repeat: no-repeat;
+  background-size: cover;     /* se adapta al ancho sin deformarse */
+  background-position: center;
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+  padding: 4% 8%;
+  box-sizing: border-box;
+}
+
+/* Contenido principal */
+.footer-contenido {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-bottom: 3%;
+}
+
+/* Izquierda */
+.footer-izquierda {
+  width: 45%;
+}
+.footer-izquierda .logo {
+  font-size: 2.2em;
+  margin: 0;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.footer-izquierda .logo span {
+  font-family: 'Times New Roman', serif;
+  font-style: italic;
+  font-size: 2.5em;
+  margin-right: 5px;
+}
+.footer-izquierda p {
+  font-size: 1em;
+  margin-top: 5px;
+}
+
+/* Derecha */
+.footer-derecha {
+  width: 45%;
+  text-align: right;
+}
+.footer-derecha a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.95em;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+.footer-derecha a:hover {
+  text-decoration: underline;
+}
+
+/* Redes sociales */
+.footer-redes {
+  margin-top: 10px;
+}
+.footer-redes a img {
+  width: 22px;
+  margin-left: 8px;
+  transition: transform 0.3s ease;
+}
+.footer-redes a img:hover {
+  transform: scale(1.1);
+}
+
+/* Línea final */
+.footer-copy {
+  text-align: center;
+  font-size: 0.9em;
+  margin-top: 20px;
+  border-top: 1px solid rgba(255,255,255,0.7);
+  padding-top: 10px;
+  font-style: italic;
+}
+
+/* Responsivo */
+@media (max-width: 800px) {
+  .footer-contenido {
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer-izquierda, .footer-derecha {
+    width: 100%;
+    text-align: center;
+  }
+  .footer-redes a img {
+    width: 25px;
+  }
+}
+
+
 
 
 .seccion3 {
@@ -75,7 +174,7 @@ body {
   gap: 5%;
   padding: 6% 0;
   max-width: 92%;
-  margin: 0 8%;
+  margin: 0 auto 8%;
   font-family: Arial, sans-serif;
 }
 
@@ -150,10 +249,8 @@ body {
   font-size: clamp(0.85rem, 0.9rem + 0.2vw, 1.1rem);
 }
 /* --- Sección contacto --- */
-#contacto {
+.contacto {
   width: 100%;
-  padding: 5% 10%;
- 
   display: flex;
   justify-content: center;
 }

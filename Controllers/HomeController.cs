@@ -17,4 +17,20 @@ public class HomeController : Controller
     {
         return View();
     }
+
+        public IActionResult todasLasPaginas()
+    {
+        return View("allPages");
+    }
+
+    public IActionResult Login()
+    {
+        return View("login");
+    }
+
+        public IActionResult Configuracion()
+    {
+        return View("Configuracion");
+    }
+
 }
