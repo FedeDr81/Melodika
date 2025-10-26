@@ -16,4 +16,7 @@ public class Curso
 
     [JsonProperty("IdInstrumento")]
     public int IdInstrumento { get; set; }
+
+    [JsonProperty("Foto")]
+    public string Foto { get; set; }
 }

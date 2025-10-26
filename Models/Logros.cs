@@ -16,4 +16,7 @@ public class Logros
 
     [JsonProperty("TipoLogro")]
     public string TipoLogro { get; set; }
+
+    [JsonProperty("Progreso")]
+    public double Progreso { get; set; }
 }

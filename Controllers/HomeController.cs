@@ -18,7 +18,7 @@ public class HomeController : Controller
         return View();
     }
 
-        public IActionResult todasLasPaginas()
+    public IActionResult todasLasPaginas()
     {
         return View("allPages");
     }
@@ -28,9 +28,49 @@ public class HomeController : Controller
         return View("login");
     }
 
-        public IActionResult Configuracion()
+    public IActionResult Configuracion()
     {
         return View("Configuracion");
     }
+
+    public IActionResult CancionesPopulares()
+    {
+        return View("CancionesPopulares");
+    }
+
+
+    public IActionResult CrearCuenta()
+    {
+        return View("CrearCuenta");
+    }
+
+
+    public IActionResult CrearUsuario()
+    {
+        return View("CrearUsuario");
+    }
+
+
+    public IActionResult Cursos()
+    {
+        return View("Cursos");
+    }
+
+
+        public IActionResult ElegirUsuario()
+    {
+        return View("ElegirUsuario");
+    }
+
+
+        public IActionResult LogrosYRecompensas()
+    {
+        return View("LogrosYRecompensas");
+    }
+        public IActionResult FAQ()
+    {
+        return View("PreguntasFrecuentes");
+    }
+
 
 }
