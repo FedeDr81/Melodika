@@ -1,12 +1,6 @@
 @{
     ViewData["Title"] = "login";
 }
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Inicio de sesión — melodika</title>
-  link
-</head>
 
 <section class="login-page">
     <div class="login-card">
@@ -14,18 +8,18 @@
         <form class="login-form" method="post">
             <div class="login-form__group">
                 <label class="visually-hidden" for="login-email">Correo electrónico o teléfono</label>
-                <input class="login-input" type="text" id="login-email" name="email" placeholder="Correo electronico o telefono" autocomplete="username" />
+                <input class="login-input" type="text" name="email" placeholder="Correo electronico o telefono"/>
             </div>
             <div class="login-form__group">
                 <label class="visually-hidden" for="login-password">Contraseña</label>
-                <input class="login-input" type="password" id="login-password" name="password" placeholder="Contraseña" autocomplete="current-password" />
+                <input class="login-input" type="password" name="password" placeholder="Contraseña"/>
             </div>
             <button type="submit" class="login-button">Iniciar sesion</button>
         </form>
 
         <p class="register-text">
             ¿No creaste tu cuenta todavia?<br />
-            <a href="#" class="register-link">Crea tu cuenta</a>
+            <a href="CrearCuenta.cshtml" class="register-link">Crea tu cuenta</a>
         </p>
 
         <div class="social-buttons">

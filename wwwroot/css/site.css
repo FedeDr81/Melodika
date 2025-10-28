@@ -361,8 +361,9 @@ body {
     font-size: 0.9em;
   }
 }
+/*--FIN INDEX--*/
 
-
+/*--COMIENZO LOGIN--*/
 .login-page {
   min-height: 100vh;
   display: flex;
@@ -372,7 +373,7 @@ body {
   background: linear-gradient(180deg, #ffffff 0%, #d4e5ff 100%);
 }
 
-.login-card {
+.login-card{
   width: min(480px, 100%);
   background-color: #ffffff;
   border-radius: 32px;
@@ -509,3 +510,152 @@ body {
     font-size: 1rem;
   }
 }
+
+/*--FIN LOGIN--*/
+
+/*Comienzo Crear cuenta--*/
+:root {
+  --melodika-blue: #005fce;
+  --melodika-purple: #7b3af5;
+  --melodika-text: #0d3b99;
+  --melodika-background: #ffffff;
+  --melodika-muted: #1c1c1c;
+  font-family: "Poppins", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.create-account-page {
+  min-height: calc(100vh - 2rem);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--melodika-background);
+  color: var(--melodika-text);
+  gap: 2rem;
+}
+
+
+
+.menu-button {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 0.5rem;
+  border: 2px solid var(--melodika-blue);
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.menu-button span,
+.menu-button::before,
+.menu-button::after {
+  content: "";
+  display: block;
+  width: 1.5rem;
+  height: 0.2rem;
+  background-color: var(--melodika-blue);
+  border-radius: 999px;
+}
+
+.menu-button span {
+  box-shadow: 0 0.5rem 0 0 var(--melodika-blue), 0 -0.5rem 0 0 var(--melodika-blue);
+}
+
+.create-account-title {
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  font-weight: 600;
+  color: var(--melodika-blue);
+  text-align: center;
+  margin: 0;
+}
+
+.create-account-card {
+  width: min(420px, 90vw);
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.create-account-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.form-input {
+  border: 2px solid var(--melodika-purple);
+  border-radius: 0.9rem;
+  padding: 0.9rem 1.1rem;
+  font-size: 1rem;
+  color: var(--melodika-muted);
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-input::placeholder {
+  color: var(--melodika-blue);
+  font-weight: 500;
+}
+
+.form-input:focus {
+  border-color: var(--melodika-blue);
+  box-shadow: 0 0 0 4px rgba(123, 58, 245, 0.15);
+}
+
+.check-group {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.95rem;
+  color: var(--melodika-muted);
+}
+
+.create-account-button {
+  margin-top: 0.5rem;
+  border: none;
+  border-radius: 999px;
+  padding: 0.9rem 1rem;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #fff;
+  background: linear-gradient(135deg, var(--melodika-blue), #1b8dfb);
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.2s ease;
+}
+
+.create-account-button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 20px rgba(11, 99, 214, 0.2);
+}
+
+@media (max-width: 480px) {
+  .create-account-page {
+      justify-content: flex-start;
+      padding-block: 3rem;
+  }
+
+  .create-account-card {
+      width: 100%;
+  }
+}
+
+/*--Fin Crear Cuenta--*/
