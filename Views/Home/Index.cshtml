@@ -10,7 +10,7 @@
       <div class="col-md-6">
         <h1 class="lead">Descubrí tus habilidades musicales</h1>
         <p class="display-5 fw-bold mb-3">Aprendé música de forma interactiva con Melódika</p>
-        <a href="login" class="btn btn-primary btn-lg mt-3">COMENZAR AHORA</a>
+        <a href="Login" class="btn btn-primary btn-lg mt-3">COMENZAR AHORA</a>
       </div>
 
       <!-- Imagen a la derecha -->
@@ -56,23 +56,23 @@
     </div>
   </section>
 <section class="seccion3">
-  <div class="card-curso">
+<div>
     <img src="Imagenes/Aprender_Guitarra.png" alt="Aprende Guitarra" />
-    <div class="overlay">
+    <div>
       <a href="/AprenderGuitarra">APRENDE GUITARRA</a>
     </div>
   </div>
 
-  <div class="card-curso">
+  <div>
     <img src="Imagenes/Aprender_Teoria.png" alt="Aprende Teoría Musical" />
-    <div class="overlay">
+    <div>
       <span>APRENDE TEORIA MUSICAL</span>
     </div>
   </div>
 
-  <div class="card-piano">
+  <div>
     <img src="Imagenes/Aprender_Piano.png" alt="Aprende Piano" />
-    <div class="overlay">
+    <div>
       <span>APRENDE PIANO</span>
     </div>
   </div>
@@ -80,10 +80,10 @@
 
 
   <section id="contacto">
-  <div class="contacto-contenedor">
+  <div>
 
     <!-- Columna izquierda: info -->
-    <div class="contacto-info">
+    <aside>
       <h2>CONTACTANOS</h2>
       <p>Llena el formulario y<br>recibí más información</p>
 
@@ -93,22 +93,22 @@
       <p>
         <a href="mailto:Melodika@gmail.com">Melodika@gmail.com</a>
       </p>
-    </div>
+    </aside>
 
     <!-- Columna derecha: formulario -->
-    <form action="/Contacto/Enviar" method="post" class="contacto-form">
+    <form action="/Contacto/Enviar" method="post">
       <article>
-        <label for="nombre" class="sr-only">Nombre</label>
+        <label for="nombre" class="visually-hidden">Nombre</label>
         <input id="nombre" name="Nombre" type="text" placeholder="Tu Nombre" required>
       </article>
 
       <article>
-      <label for="email" class="sr-only">Email</label>
+      <label for="email" class="visually-hidden">Email</label>
       <input id="email" name="Email" type="email" placeholder="Tu Email" required>
       </article>
-      
+
       <article>
-        <label for="mensaje" class="sr-only">Mensaje</label>
+        <label for="mensaje" class="visually-hidden">Mensaje</label>
         <textarea id="mensaje" name="Mensaje" rows="4" placeholder="Tu Mensaje" required></textarea>
       </article>
 

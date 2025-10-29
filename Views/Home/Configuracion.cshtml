@@ -1,47 +1,35 @@
-<div class="container settings-grid">
-    <div class="row">
-      <!-- Top-left -->
-      <div class="col-12 col-md-6 col-lg-6">
-        <div class="setting-item">
-          <div class="setting-img-wrap" aria-hidden="true">
-            <!-- Cambia la ruta por la de tu imagen -->
-            <img src="/assets/icons/gear.png" alt="Personalizar experiencia" class="setting-img">
-          </div>
-          <a href="#" class="setting-link">Personalizar experiencia</a>
-        </div>
-      </div>
+@{
+    ViewData["Title"] = "Configuración";
+}
 
-      <!-- Top-right (selected) -->
-      <div class="col-12 col-md-6 col-lg-6">
-        <div class="setting-item">
-          <div class="setting-img-wrap selected" aria-hidden="true">
-            <!-- Imagen del usuario; la caja azul viene de .selected -->
-            <img src="/assets/icons/user.png" alt="Información personal" class="setting-img">
-          </div>
-          <a href="#" class="setting-link">Informacion personal</a>
-        </div>
-      </div>
+<section class="settings-page" aria-labelledby="settings-page-title">
+    <div class="settings-grid" role="list">
+        <article class="setting-card" role="listitem">
+            <div class="setting-icon" aria-hidden="true">
+                <img src="~/imagenes/configuracion.png" alt="" loading="lazy">
+            </div>
+            <a href="#" class="setting-label">Personalizar experiencia</a>
+        </article>
+
+        <article class="setting-card" role="listitem">
+            <div class="setting-icon" aria-hidden="true">
+                <img src="~/imagenes/persona.png" alt="" loading="lazy">
+            </div>
+            <a href="#" class="setting-label">Información personal</a>
+        </article>
+
+        <article class="setting-card" role="listitem">
+            <div class="setting-icon" aria-hidden="true">
+                <img src="~/imagenes/candado.png" alt="" loading="lazy">
+            </div>
+            <a href="#" class="setting-label">Privacidad y seguridad</a>
+        </article>
+
+        <article class="setting-card" role="listitem">
+            <div class="setting-icon" aria-hidden="true">
+                <img src="~/imagenes/conexiones.png" alt="" loading="lazy">
+            </div>
+            <a href="#" class="setting-label">Conexiones externas</a>
+        </article>
     </div>
-
-    <div class="row mt-5">
-      <!-- Bottom-left -->
-      <div class="col-12 col-md-6 col-lg-6">
-        <div class="setting-item">
-          <div class="setting-img-wrap" aria-hidden="true">
-            <img src="/assets/icons/lock.png" alt="Privacidad y seguridad" class="setting-img">
-          </div>
-          <a href="#" class="setting-link">Privacidad y seguridad</a>
-        </div>
-      </div>
-
-      <!-- Bottom-right -->
-      <div class="col-12 col-md-6 col-lg-6">
-        <div class="setting-item">
-          <div class="setting-img-wrap" aria-hidden="true">
-            <img src="/assets/icons/share.png" alt="Conexiones externas" class="setting-img">
-          </div>
-          <a href="#" class="setting-link">Conexiones externas</a>
-        </div>
-      </div>
-    </div>
-  </div>
+</section>

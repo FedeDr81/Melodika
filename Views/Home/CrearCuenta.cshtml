@@ -4,43 +4,41 @@
 
 
 <section class="create-account-page">
-    <div class="create-account-header">
+    <article>
+        <h1>Crear cuenta</h1>
 
-    <div class="create-account-card">
-        <h1 class="create-account-title">Crear cuenta</h1>
-
-        <form class="create-account-form" method="post">
-            <div class="form-field">
+        <form method="post">
+            <div>
                 <label class="visually-hidden" for="register-email">Correo electrónico</label>
-                <input class="form-input" type="email" id="register-email" name="email" placeholder="Correo electronico" autocomplete="email" required />
+                <input type="email" id="register-email" name="email" placeholder="Correo electronico" autocomplete="email" required />
             </div>
 
-            <div class="form-field">
+            <div>
                 <label class="visually-hidden" for="register-password">Contraseña</label>
-                <input class="form-input" type="password" id="register-password" name="password" placeholder="Contraseña" autocomplete="new-password" required />
+                <input type="password" id="register-password" name="password" placeholder="Contraseña" autocomplete="new-password" required />
             </div>
 
-            <div class="form-field">
+            <div>
                 <label class="visually-hidden" for="register-confirm">Confirmar contraseña</label>
-                <input class="form-input" type="password" id="register-confirm" name="confirmPassword" placeholder="Confirmar contraseña" autocomplete="new-password" required />
+                <input type="password" id="register-confirm" name="confirmPassword" placeholder="Confirmar contraseña" autocomplete="new-password" required />
             </div>
 
-            <div class="form-field">
+            <div>
                 <label class="visually-hidden" for="register-username">Nombre de usuario</label>
-                <input class="form-input" type="text" id="register-username" name="username" placeholder="Username" autocomplete="username" required />
+                <input type="text" id="register-username" name="username" placeholder="Username" autocomplete="username" required />
             </div>
 
-            <label class="check-group" for="terms">
+            <label for="terms">
                 <input type="checkbox" id="terms" name="terms" required />
                 Acepto los términos y condiciones
             </label>
 
-            <label class="check-group" for="updates">
+            <label for="updates">
                 <input type="checkbox" id="updates" name="updates" />
                 Quiero recibir información y anuncios de Melodika
             </label>
 
-            <button type="submit" class="create-account-button">Crear cuenta</button>
+            <button type="submit">Crear cuenta</button>
         </form>
-    </div>
+    </article>
 </section>
