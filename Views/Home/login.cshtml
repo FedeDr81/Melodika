@@ -3,29 +3,29 @@
 }
 
 <section class="login-page">
-    <article>
+    <article class="login-caja">
         <h1>Inicio de sesion en melodika</h1>
-        <form method="post">
-            <div>
+        <form class="login-formulario" method="post">
+            <div class="login-campo">
                 <label class="visually-hidden" for="login-email">Correo electrónico o teléfono</label>
-                <input type="text" id="login-email" name="email" placeholder="Correo electronico o telefono"/>
+                <input class="login-entrada" type="text" id="login-email" name="email" placeholder="Correo electronico o telefono"/>
             </div>
-            <div>
+            <div class="login-campo">
                 <label class="visually-hidden" for="login-password">Contraseña</label>
-                <input type="password" id="login-password" name="password" placeholder="Contraseña"/>
+                <input class="login-entrada" type="password" id="login-password" name="password" placeholder="Contraseña"/>
             </div>
-            <button type="submit">Iniciar sesion</button>
+            <button class="login-boton" type="submit">Iniciar sesion</button>
         </form>
 
         <p>
             ¿No creaste tu cuenta todavia?<br />
-            <a href="CrearCuenta.cshtml">Crea tu cuenta</a>
+            <a class="login-enlace" href="CrearCuenta.cshtml">Crea tu cuenta</a>
         </p>
 
         <nav aria-label="Opciones de redes sociales">
-            <a href="#">Iniciar sesión con Google</a>
-            <a href="#">Iniciar sesión con Facebook</a>
-            <a href="#">Iniciar sesión con Instagram</a>
+            <a class="login-enlace" href="#">Iniciar sesión con Google</a>
+            <a class="login-enlace" href="#">Iniciar sesión con Facebook</a>
+            <a class="login-enlace" href="#">Iniciar sesión con Instagram</a>
         </nav>
     </article>
 </section>

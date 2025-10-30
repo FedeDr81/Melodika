@@ -6,14 +6,12 @@
 <section class="Hero container-fluid bg-light py-5">
   <div class="container">
     <div class="row align-items-center">
-      <!-- Texto a la izquierda -->
       <div class="col-md-6">
         <h1 class="lead">Descubrí tus habilidades musicales</h1>
         <p class="display-5 fw-bold mb-3">Aprendé música de forma interactiva con Melódika</p>
         <a href="Login" class="btn btn-primary btn-lg mt-3">COMENZAR AHORA</a>
       </div>
 
-      <!-- Imagen a la derecha -->
       <div class="col-md-6 text-center">
         <img src="/imagenes/Foto_Hero.png" class="img-fluid rounded" alt="Persona usando app de piano" />
       </div>
@@ -21,7 +19,6 @@
   </div>
 </section>
 
-  <!-- ¿Quiénes somos? -->
   <section class="container">
     <h2 class="section-title">¿Quiénes somos?</h2>
     <p class="lead text-center">
@@ -29,7 +26,6 @@
     </p>
   </section>
 
-  <!-- Qué vas a aprender -->
   <section class="container">
     <h2 class="section-title">QUÉ VAS A APRENDER</h2>
     <div class="row">
@@ -56,34 +52,32 @@
     </div>
   </section>
 <section class="seccion3">
-<div>
-    <img src="Imagenes/Aprender_Guitarra.png" alt="Aprende Guitarra" />
-    <div>
-      <a href="/AprenderGuitarra">APRENDE GUITARRA</a>
+<div class="seccion3-card seccion3-card-guitarra">
+    <img class="seccion3-imagen" src="Imagenes/Aprender_Guitarra.png" alt="Aprende Guitarra" />
+    <div class="seccion3-texto">
+      <a class="seccion3-enlace" href="/AprenderGuitarra">APRENDE GUITARRA</a>
     </div>
   </div>
 
-  <div>
-    <img src="Imagenes/Aprender_Teoria.png" alt="Aprende Teoría Musical" />
-    <div>
-      <span>APRENDE TEORIA MUSICAL</span>
+  <div class="seccion3-card seccion3-card-teoria">
+    <img class="seccion3-imagen" src="Imagenes/Aprender_Teoria.png" alt="Aprende Teoría Musical" />
+    <div class="seccion3-texto">
+      <span class="seccion3-enlace">APRENDE TEORIA MUSICAL</span>
     </div>
   </div>
 
-  <div>
-    <img src="Imagenes/Aprender_Piano.png" alt="Aprende Piano" />
-    <div>
-      <span>APRENDE PIANO</span>
+  <div class="seccion3-card seccion3-card-piano">
+    <img class="seccion3-imagen" src="Imagenes/Aprender_Piano.png" alt="Aprende Piano" />
+    <div class="seccion3-texto">
+      <span class="seccion3-enlace">APRENDE PIANO</span>
     </div>
   </div>
 </section>
 
 
   <section id="contacto">
-  <div>
-
-    <!-- Columna izquierda: info -->
-    <aside>
+  <div class="contacto-contenido">
+    <aside class="contacto-info">
       <h2>CONTACTANOS</h2>
       <p>Llena el formulario y<br>recibí más información</p>
 
@@ -94,27 +88,24 @@
         <a href="mailto:Melodika@gmail.com">Melodika@gmail.com</a>
       </p>
     </aside>
-
-    <!-- Columna derecha: formulario -->
-    <form action="/Contacto/Enviar" method="post">
-      <article>
+    <form class="contacto-formulario" action="/Contacto/Enviar" method="post">
+      <article class="contacto-campo">
         <label for="nombre" class="visually-hidden">Nombre</label>
-        <input id="nombre" name="Nombre" type="text" placeholder="Tu Nombre" required>
+        <input class="contacto-input" id="nombre" name="Nombre" type="text" placeholder="Tu Nombre" required>
       </article>
 
-      <article>
+      <article class="contacto-campo">
       <label for="email" class="visually-hidden">Email</label>
-      <input id="email" name="Email" type="email" placeholder="Tu Email" required>
+      <input class="contacto-input" id="email" name="Email" type="email" placeholder="Tu Email" required>
       </article>
 
-      <article>
+      <article class="contacto-campo">
         <label for="mensaje" class="visually-hidden">Mensaje</label>
-        <textarea id="mensaje" name="Mensaje" rows="4" placeholder="Tu Mensaje" required></textarea>
+        <textarea class="contacto-input" id="mensaje" name="Mensaje" rows="4" placeholder="Tu Mensaje" required></textarea>
       </article>
 
-      <button type="submit">Enviar</button>
+      <button class="contacto-boton" type="submit">Enviar</button>
     </form>
 
   </div>
 </section>
-
