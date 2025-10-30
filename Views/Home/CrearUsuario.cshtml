@@ -1,0 +1,18 @@
+@{
+    ViewData["Title"] = "CrearUsuario";
+}
+
+<section class="crear-usuario">
+  <h2>Crear usuario</h2>
+  <form>
+    <input type="text" placeholder="Nombre de usuario" required>
+    <input type="date" placeholder="Fecha de nacimiento" required>
+    <select>
+      <option value="" disabled selected>Género (opcional)</option>
+      <option value="masculino">Masculino</option>
+      <option value="femenino">Femenino</option>
+      <option value="no-binario">No binario</option>
+    </select>
+    <button type="submit">Crear usuario</button>
+  </form>
+</section>

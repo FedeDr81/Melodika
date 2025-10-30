@@ -32,8 +32,18 @@ body {
   width: 100%;
   height: auto;
 }
+.accion-primaria{
+  background-color: #0084DD;
+  color: #F0F8FF;
+  border: none;
+  padding: 12px 24px;
+  font-weight: 700;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  
+}
 
-.accion-primaria,
 .contacto-boton,
 .login-boton {
   background-color: #0084DD;
@@ -289,6 +299,7 @@ body {
   width: 100%;
   display: flex;
   justify-content: center;
+  border-radius: 90%;
 }
 
 @media (max-width: 600px) {
@@ -517,4 +528,64 @@ body {
     height: 96px;
     width: 96px;
   }
+}
+
+.crear-usuario {
+  text-align: center;
+  padding: 6% 0;
+  background: linear-gradient(to bottom, #ffffff, #eaf5ff);
+  font-family: "Poppins", sans-serif;
+}
+
+.crear-usuario h2 {
+  font-family: "Georgia", serif;
+  font-size: 2em; /* más grande */
+  color: #2b2b83;
+  margin-bottom: 30px;
+}
+
+.crear-usuario form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Campos de entrada */
+.crear-usuario input,
+.crear-usuario select {
+  width: 320px;          /* antes 250px */
+  padding: 14px;         /* más alto */
+  border: 2.5px solid #7a3eff;
+  border-radius: 10px;
+  background-color: white;
+  font-size: 1.1em;      /* texto más grande */
+  color: #333;
+  outline: none;
+  transition: 0.2s;
+}
+
+.crear-usuario input:focus,
+.crear-usuario select:focus {
+  border-color: #4a00e0;
+  box-shadow: 0 0 8px rgba(122, 62, 255, 0.5);
+}
+
+/* Botón azul más grande */
+.crear-usuario button {
+  margin-top: 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 14px 40px;
+  font-weight: bold;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.crear-usuario button:hover {
+  background-color: #005fcc;
+  transform: scale(1.03);
 }
