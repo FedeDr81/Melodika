@@ -54,6 +54,9 @@ body {
   text-decoration: none;
   display: inline-block;
   text-align: center;
+  border-radius: 20px;
+  padding: 14px;
+  font-size: 110%;
 }
 
 .cta-espaciada {
@@ -226,6 +229,20 @@ body {
   color: #0D3B99;
 }
 
+.contacto-contenido {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 96%;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 8%;
+  row-gap: 10%;
+  padding: 4% 6%;
+}
+
+
+
 @media (max-width: 768px) {
   .contacto-contenido {
     flex-direction: column;
@@ -319,7 +336,6 @@ body {
   align-items: center;
   justify-content: center;
   padding: 60px 20px;
-  background-color: #F0F8FF;
 }
 
 .login-caja {
@@ -357,13 +373,6 @@ body {
   border: 2px solid #0084DD;
   background-color: #F0F8FF;
   color: #0D3B99;
-}
-
-.login-boton {
-  width: 100%;
-  border-radius: 20px;
-  padding: 14px;
-  font-size: 110%;
 }
 
 .login-caja p {
@@ -412,7 +421,6 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #F0F8FF;
   color: #0D3B99;
   gap: 6%;
 }
@@ -533,7 +541,6 @@ body {
 .crear-usuario {
   text-align: center;
   padding: 6% 0;
-  background: linear-gradient(to bottom, #ffffff, #eaf5ff);
   font-family: "Poppins", sans-serif;
 }
 
