@@ -14,12 +14,12 @@
                 <label class="visually-hidden" for="login-password">Contraseña</label>
                 <input class="login-entrada" type="password" id="login-password" name="password" placeholder="Contraseña"/>
             </div>
-            <button class="login-boton" type="submit" >Iniciar sesion</button>
+            <a href='@Url.Action("ElegirUsuario", "Home")' class= "login-boton"> Iniciar sesion </a>
         </form>
 
         <p>
-            ¿No creaste tu cuenta todavia?<br />
-            <a class="login-enlace" href="CrearCuenta.cshtml">Crea tu cuenta</a>
+            ¿No creaste tu cuenta todavia?<br/>
+            <a href='@Url.Action("CrearCuenta", "Home")' class = "login-enlace"> Crear cuenta </a>
         </p>
 
         <nav aria-label="Opciones de redes sociales">
