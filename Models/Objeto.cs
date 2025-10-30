@@ -1,4 +1,4 @@
-namespace Melodika.Models;
+namespace melodika.Models;
 using Newtonsoft.Json;
 public static class Objeto
 {
