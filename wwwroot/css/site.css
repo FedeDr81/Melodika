@@ -306,7 +306,7 @@ body {
 .seccion-usuarios article > div {
   width: 130px;
   height: 130px;
-  background-color: #7f7f7f;
+  background-color: #cecece;
   border-radius: 50%;
   display: flex;
   justify-content: center;
