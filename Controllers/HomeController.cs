@@ -1,7 +1,8 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
-using Melodika.Models;
-
+using melodika.Models;
+using Newtonsoft.Json;
+using System.Collections.Generic;
 namespace Melodika.Controllers;
 
 public class HomeController : Controller
@@ -35,12 +36,16 @@ public class HomeController : Controller
 
     public IActionResult CancionesPopulares()
     {
+        List<Cancion> canciones = new List<Cancion>();
+        canciones = BD.seleccionarCancion();
+        ViewBag.canciones = canciones;
         return View("CancionesPopulares");
     }
 
 
     public IActionResult CrearCuenta()
     {
+        
         return View("CrearCuenta");
     }
 

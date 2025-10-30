@@ -1,1 +1,12 @@
+ <h1>CANCIONES DESTACADAS</h1>
  
+ @foreach (var cancion in ViewBag.canciones)
+ {
+    <div>
+        <img src="" alt="Foto Cancion">
+        <h1>@cancion.Titulo - @cancion.Autor</h1>
+        <p>@cancion.Dificultad</p>
+        <p>@cancion.Valoracion</p>
+
+    </div>
+ }

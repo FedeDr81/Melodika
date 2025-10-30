@@ -3,8 +3,6 @@ using Newtonsoft.Json;
 
 public class Cancion
 {
-    public Cancion() { }
-
     [JsonProperty("IdCancion")]
     public int IdCancion { get; set; }
 
@@ -20,8 +18,8 @@ public class Cancion
     [JsonProperty("Dificultad")]
     public string Dificultad { get; set; }
 
-    [JsonProperty("IdGenero")]
-    public int IdGenero { get; set; }
+    [JsonProperty("NombreGenero")]
+    public string NombreGenero { get; set; }
 
     [JsonProperty("Valoracion")]
     public int Valoracion { get; set; }
