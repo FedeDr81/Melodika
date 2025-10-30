@@ -105,7 +105,7 @@ public class HomeController : Controller
     {
         return View("LogrosYRecompensas");
     }
-        public IActionResult FAQ()
+        public IActionResult PreguntasFrecuentes()
     {
         return View("PreguntasFrecuentes");
     }

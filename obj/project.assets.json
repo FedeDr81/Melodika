@@ -2455,23 +2455,39 @@
     ]
   },
   "packageFolders": {
+<<<<<<< HEAD
     "C:\\Users\\49092806\\.nuget\\packages\\": {},
+=======
+    "C:\\Users\\49378703\\.nuget\\packages\\": {},
+>>>>>>> 2a4b4b2c497b54df595a358f86ad6ca66d67be5b
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\49092806\\Downloads\\Melodika\\Melodika.csproj",
       "projectName": "Melodika",
       "projectPath": "C:\\Users\\49092806\\Downloads\\Melodika\\Melodika.csproj",
       "packagesPath": "C:\\Users\\49092806\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\49092806\\Downloads\\Melodika\\obj\\",
+=======
+      "projectUniqueName": "C:\\Users\\49378703\\Melodika\\Melodika.csproj",
+      "projectName": "Melodika",
+      "projectPath": "C:\\Users\\49378703\\Melodika\\Melodika.csproj",
+      "packagesPath": "C:\\Users\\49378703\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\49378703\\Melodika\\obj\\",
+>>>>>>> 2a4b4b2c497b54df595a358f86ad6ca66d67be5b
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
+<<<<<<< HEAD
         "C:\\Users\\49092806\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+        "C:\\Users\\49378703\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> 2a4b4b2c497b54df595a358f86ad6ca66d67be5b
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -2539,7 +2555,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.206/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.406/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
