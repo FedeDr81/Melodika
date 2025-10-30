@@ -41,7 +41,6 @@ body {
   text-decoration: none;
   display: inline-block;
   text-align: center;
-  
 }
 
 .contacto-boton,
@@ -546,7 +545,7 @@ body {
 
 .crear-usuario h2 {
   font-family: "Georgia", serif;
-  font-size: 2em; /* más grande */
+  font-size: 2em; 
   color: #2b2b83;
   margin-bottom: 30px;
 }
@@ -558,15 +557,14 @@ body {
   gap: 20px;
 }
 
-/* Campos de entrada */
 .crear-usuario input,
 .crear-usuario select {
-  width: 320px;          /* antes 250px */
-  padding: 14px;         /* más alto */
+  width: 320px;         
+  padding: 14px;         
   border: 2.5px solid #7a3eff;
   border-radius: 10px;
   background-color: white;
-  font-size: 1.1em;      /* texto más grande */
+  font-size: 1.1em;     
   color: #333;
   outline: none;
   transition: 0.2s;
@@ -578,7 +576,7 @@ body {
   box-shadow: 0 0 8px rgba(122, 62, 255, 0.5);
 }
 
-/* Botón azul más grande */
+
 .crear-usuario button {
   margin-top: 15px;
   background-color: #007bff;
@@ -596,3 +594,76 @@ body {
   background-color: #005fcc;
   transform: scale(1.03);
 }
+.links{
+  text-decoration: none;
+}
+.faq {
+  text-align: center;
+  background: linear-gradient(to bottom, #ffffff, #f8fbff);
+  padding: 5% 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.faq h2 {
+  font-family: "Georgia", serif;
+  color: #004aad;
+  font-size: 2em;
+  margin-bottom: 40px;
+}
+
+
+.faq-item {
+  background-color: #f0f7ff;
+  border-radius: 12px;
+  width: 60%;
+  margin: 20px auto;
+  padding: 20px 30px;
+  text-align: left;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: 0.2s;
+}
+
+.faq-item:hover {
+  transform: scale(1.01);
+  box-shadow: 0 6px 10px rgba(0,0,0,0.15);
+}
+
+.faq-item h3 {
+  color: #004aad;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.faq-item p {
+  color: #333;
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+
+.contact-btn {
+  margin-top: 40px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 12px 40px;
+  font-size: 1em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.contact-btn:hover {
+  background-color: #005fcc;
+  transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .faq-item {
+    width: 85%;
+  }
+}
+
