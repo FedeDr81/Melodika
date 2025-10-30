@@ -18,4 +18,15 @@ public static class BD
         return canciones;
     }
 
+         static public List<Cancion> logIn(string correo, string contraseña)
+    {
+        int idUser
+        using (SqlConnection connection = new SqlConnection(_connectionString))
+        {
+            string query = "EXEC loginCuenta @CorreoElectronico = @pCorreo, @Contraseña = @pContraseña ;";
+            idUser = connection.Query<Cancion>(query).ToList();
+        }
+        return idUser;
+    }
+
 }

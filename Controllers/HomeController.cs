@@ -29,6 +29,12 @@ public class HomeController : Controller
         return View("login");
     }
 
+        public IActionResult LoginGuardad(string correo, string contraseña)
+    {
+        
+        return View("login");
+    }
+
     public IActionResult Configuracion()
     {
         return View("Configuracion");
@@ -45,7 +51,13 @@ public class HomeController : Controller
 
     public IActionResult CrearCuenta()
     {
-        
+
+        return View("CrearCuenta");
+    }
+
+        public IActionResult CrearCuentaGuardar(string correo, string contra1, string contra2, string username)
+    {
+
         return View("CrearCuenta");
     }
 
